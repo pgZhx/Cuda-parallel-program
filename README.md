@@ -73,3 +73,13 @@ sudo sh cuda_11.7.0_515.43.04_linux.run
 tar -xzvf cudnn-linux-x86_64-8.5.0.96_cuda11-archive.tar.xz
 sudo cp cudnn-*-archive/include/* /usr/local/cuda/include/
 sudo cp cudnn-*-archive/lib/* /usr/local/cuda/lib64/
+```
+### 编译运行命令
+```bash
+nvcc -o 输出文件名 文件名
+./输出文件名
+#链接cublas库时
+nvcc -o 输出文件名 文件名 -lcublas
+#链接cuDNN库时
+nvcc -o 输出文件名 文件名 -lcudnn
+```
