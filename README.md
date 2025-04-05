@@ -1,0 +1,2 @@
+# Cuda-parallel-program
+一个基于CUDA并行编程的项目，包含通用矩阵乘法（GEMM）的并行实现、直接卷积与im2col优化卷积的GPU实现，以及CUBLAS和cuDNN库的性能对比分析。通过实验探索不同并行计算策略的性能差异，并总结优化方法
